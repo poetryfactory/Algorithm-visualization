@@ -393,8 +393,6 @@ void MyGraphicsView::morris(MyGraphicsVexItem * head)
 
     while (cur!=nullptr && cur->nameText != "nullptr") { //when cur is nullptr,stop
         addAnimation(cur->visit());
-        resultOutput->insertPlainText(" "+cur->nameText);
-        resultOutput->setFont(QFont("Segoe Print",22,QFont::Bold));
         mostRight = cur->left;
         if (mostRight != nullptr && mostRight->nameText != "nullptr")
         { //cur has left subtree
@@ -403,6 +401,8 @@ void MyGraphicsView::morris(MyGraphicsVexItem * head)
             }
             if (mostRight->right->nameText == "nullptr") { //arrived cur for the first time
                 addAnimation(changeName(cur->nameText,mostRight->right));
+                resultOutput->insertPlainText(" "+cur->nameText);
+                resultOutput->setFont(QFont("Segoe Print",22,QFont::Bold));
                 cur = cur->left;
                 continue;
             } else { //second time
@@ -411,6 +411,8 @@ void MyGraphicsView::morris(MyGraphicsVexItem * head)
         }
         //cur has no left subtree,or come to cur for the second time
         if(cur->right->nameText=="nullptr"){
+            resultOutput->insertPlainText(" "+cur->nameText);
+            resultOutput->setFont(QFont("Segoe Print",22,QFont::Bold));
             cur=cur->right;
         }else{
             for(int i=0;i<vexes.size();i++)
@@ -422,6 +424,30 @@ void MyGraphicsView::morris(MyGraphicsVexItem * head)
             }
         }
     }
+}
+
+void MyGraphicsView::BFS(MyGraphicsVexItem * head)
+{
+    if(head!=nullptr)
+    {
+        QQueue<MyGraphicsVexItem*> q;
+        q.push_back(head);
+        while(!q.empty())
+        {
+            auto node = q.front();
+            q.pop_front();
+            addAnimation(node->visit());
+            resultOutput->insertPlainText(" "+node->nameText);
+            resultOutput->setFont(QFont("Segoe Print",22,QFont::Bold));
+            if(node->left!=nullptr)     q.push_back(node->left);
+            if(node->right!=nullptr)    q.push_back(node->right);
+        }
+    }
+}
+
+void MyGraphicsView::SolveMaximizeStepsByDFS(MyGraphicsVexItem* head)
+{
+    //if(head==nullptr)
 }
 
 void MyGraphicsView::init()
@@ -542,6 +568,12 @@ void MyGraphicsVexItem::startAnimation(){
     if(curAnimation != nullptr){
         curAnimation->start();
     }
+}
+
+int MyGraphicsView::cauculateStep(MyGraphicsVexItem * node)
+{
+    if(node==nullptr)   return 0;
+    return std::max(cauculateStep(node->left),cauculateStep(node->right))+1;
 }
 
 //*******************************************************************************************

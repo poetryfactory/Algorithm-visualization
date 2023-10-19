@@ -25,6 +25,10 @@ TreePage::TreePage(QWidget *parent)
             this->son->pos();
         }else if(choice==4){
             this->son->morris();
+        }else if(choice==5){
+            this->son->BFS();
+        }else if(choice==6){
+            this->son->SolveMaximizeStepByDFS();
         }else{
             MyDialog * hintDlg=new MyDialog(500,300);
             QTextEdit * hint=new QTextEdit(hintDlg);
@@ -133,7 +137,7 @@ TreePage::TreePage(QWidget *parent)
     btn3->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
                                  "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
     btn3->setParent(this);
-    btn3->move(1410,540);
+    btn3->move(1300,540);
     btn3->resize(210,70);
     connect(btn3,&QPushButton::clicked,this,[=](){
         this->son->build();
@@ -145,11 +149,35 @@ TreePage::TreePage(QWidget *parent)
     btn4->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
                                  "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
     btn4->setParent(this);
-    btn4->move(1300,660);
-    btn4->resize(450,70);
+    btn4->move(1540,540);
+    btn4->resize(210,70);
     connect(btn4,&QPushButton::clicked,this,[=](){
         this->son->build2();
         choice=4;
+    });
+
+    QPushButton * btn5=new QPushButton();
+    btn5->setText("BFS");
+    btn5->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
+                        "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
+    btn5->setParent(this);
+    btn5->move(1300,640);
+    btn5->resize(210,70);
+    connect(btn5,&QPushButton::clicked,this,[=](){
+        this->son->build();
+        choice=5;
+    });
+
+    QPushButton * btn6=new QPushButton();
+    btn6->setText("DFS求最大深度");
+    btn6->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 30px; font-family: Calibri;}"
+                        "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
+    btn6->setParent(this);
+    btn6->move(1540,640);
+    btn6->resize(210,70);
+    connect(btn6,&QPushButton::clicked,this,[=](){
+        this->son->build2();
+        choice=6;
     });
 
     codePage = new SlidePage(cornerRadius, "CODE", this);
@@ -171,15 +199,15 @@ TreePage::TreePage(QWidget *parent)
         slideFlag =true;
     });
 
-    QPushButton * btn5=new QPushButton();
-    btn5->setText("pro");
-    btn5->setStyleSheet("QPushButton{background-color: rgba(255,255,255); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
+    QPushButton * slideBtn1=new QPushButton();
+    slideBtn1->setText("pro");
+    slideBtn1->setStyleSheet("QPushButton{background-color: rgba(255,255,255); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
                                  "QPushButton:hover{background-color: rgba(58,143,192,20);}");
-    btn5->setParent(codePage);
-    btn5->move(60,300);
-    btn5->resize(210,70);
+    slideBtn1->setParent(codePage);
+    slideBtn1->move(60,300);
+    slideBtn1->resize(210,70);
     connect(btn1,&QPushButton::clicked,son,&SonWindow::build);
-    connect(btn5,&QPushButton::clicked,this,[=](){
+    connect(slideBtn1,&QPushButton::clicked,this,[=](){
         MyDialog * dlg1=new MyDialog(500,440);
         QTextEdit * code1=new QTextEdit(dlg1);
         code1->setText("void f(TreeNode * head)\n"
@@ -199,15 +227,15 @@ TreePage::TreePage(QWidget *parent)
         dlg1->show();
     });
 
-    QPushButton * btn6=new QPushButton();
-    btn6->setText("in");
-    btn6->setStyleSheet("QPushButton{background-color: rgba(255,255,255); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
+    QPushButton * slideBtn2=new QPushButton();
+    slideBtn2->setText("in");
+    slideBtn2->setStyleSheet("QPushButton{background-color: rgba(255,255,255); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
                                  "QPushButton:hover{background-color: rgba(58,143,192,20);}");
-    btn6->setParent(codePage);
-    btn6->move(60,400);
-    btn6->resize(210,70);
+    slideBtn2->setParent(codePage);
+    slideBtn2->move(60,400);
+    slideBtn2->resize(210,70);
     connect(btn1,&QPushButton::clicked,son,&SonWindow::build);
-    connect(btn6,&QPushButton::clicked,this,[=](){
+    connect(slideBtn2,&QPushButton::clicked,this,[=](){
         MyDialog * dlg2=new MyDialog(500,440);
         QTextEdit * code2=new QTextEdit(dlg2);
         code2->setText("void f(TreeNode * head)\n"
@@ -227,15 +255,15 @@ TreePage::TreePage(QWidget *parent)
         dlg2->show();
     });
 
-    QPushButton * btn7=new QPushButton();
-    btn7->setText("pos");
-    btn7->setStyleSheet("QPushButton{background-color: rgba(255,255,255); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
+    QPushButton * slideBtn3=new QPushButton();
+    slideBtn3->setText("pos");
+    slideBtn3->setStyleSheet("QPushButton{background-color: rgba(255,255,255); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
                                  "QPushButton:hover{background-color: rgba(58,143,192,20);}");
-    btn7->setParent(codePage);
-    btn7->move(60,500);
-    btn7->resize(210,70);
+    slideBtn3->setParent(codePage);
+    slideBtn3->move(60,500);
+    slideBtn2->resize(210,70);
     connect(btn1,&QPushButton::clicked,son,&SonWindow::build);
-    connect(btn7,&QPushButton::clicked,this,[=](){
+    connect(slideBtn3,&QPushButton::clicked,this,[=](){
         MyDialog * dlg3=new MyDialog(500,440);
         QTextEdit * code3=new QTextEdit(dlg3);
         code3->setText("void f(TreeNode * head)\n"
@@ -255,15 +283,15 @@ TreePage::TreePage(QWidget *parent)
         dlg3->show();
     });
 
-    QPushButton * btn8=new QPushButton();
-    btn8->setText("morris");
-    btn8->setStyleSheet("QPushButton{background-color: rgba(255,255,255); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
+    QPushButton * slideBtn4=new QPushButton();
+    slideBtn4->setText("morris");
+    slideBtn4->setStyleSheet("QPushButton{background-color: rgba(255,255,255); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
                                  "QPushButton:hover{background-color: rgba(58,143,192,20);}");
-    btn8->setParent(codePage);
-    btn8->move(60,600);
-    btn8->resize(210,70);
+    slideBtn4->setParent(codePage);
+    slideBtn4->move(60,600);
+    slideBtn4->resize(210,70);
     connect(btn1,&QPushButton::clicked,son,&SonWindow::build);
-    connect(btn8,&QPushButton::clicked,this,[=](){
+    connect(slideBtn4,&QPushButton::clicked,this,[=](){
         MyDialog * dlg4=new MyDialog(900,1000);
         QTextEdit * code4=new QTextEdit(dlg4);
         code4->setText("void morris(TreeNode * head)\n"

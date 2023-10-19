@@ -31,6 +31,8 @@ public slots:
     void in();
     void pos();    
     void morris();
+    void BFS();
+    void SolveMaximizeStepByDFS();
 };
 
 

@@ -88,3 +88,14 @@ void SonWindow::morris()
     gv->morris(gv->root);
 }
 
+void SonWindow::BFS()
+{
+    gv->resultOutput->clear();
+    gv->BFS(gv->root);
+}
+
+void SonWindow::SolveMaximizeStepByDFS()
+{
+    gv->buildTree2();
+    gv->SolveMaximizeStepsByDFS(gv->root);
+}

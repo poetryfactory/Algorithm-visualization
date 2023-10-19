@@ -14,6 +14,7 @@ SOURCES += \
     mainwindow.cpp \
     mybutton.cpp \
     mydialog.cpp \
+    myfunctioncallstack.cpp \
     slidepage.cpp \
     sonwindow.cpp \
     treepage.cpp
@@ -23,6 +24,7 @@ HEADERS += \
     mainwindow.h \
     mybutton.h \
     mydialog.h \
+    myfunctioncallstack.h \
     slidepage.h \
     sonwindow.h \
     treepage.h

@@ -49,6 +49,8 @@ private:
     void clearSketch();
     void sketchLine(QPointF start, QPointF end);
 
+    int cauculateStep(MyGraphicsVexItem * node);
+
     /* Animation loop */
     QQueue<QTimeLine*> aniQueue;
     bool onAni = false;
@@ -84,6 +86,8 @@ public:
     void in(MyGraphicsVexItem * head);
     void pos(MyGraphicsVexItem * head);
     void morris(MyGraphicsVexItem * head);
+    void BFS(MyGraphicsVexItem* head);
+    void SolveMaximizeStepsByDFS(MyGraphicsVexItem* head);
 
     void init();
 };
@@ -112,6 +116,7 @@ public:
 
     /* For display tag */
     QGraphicsSimpleTextItem *nameTag = nullptr;
+    QGraphicsSimpleTextItem *valTag = nullptr;
     QString nameText = "";
     void setName(QString s);
 
