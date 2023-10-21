@@ -1,0 +1,32 @@
+{
+	"BUILD_DIR" : "/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/index_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/chenshujian/Desktop/qt/index",
+	"CMAKE_SOURCE_DIR" : "/Users/chenshujian/Desktop/qt/index",
+	"INCLUDE_DIR" : "/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/index_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/chenshujian/Desktop/qt/index/img/github.png",
+		"/Users/chenshujian/Desktop/qt/index/img/circle.ico",
+		"/Users/chenshujian/Desktop/qt/index/img/downArrow.png",
+		"/Users/chenshujian/Desktop/qt/index/img/rightArrow.png",
+		"/Users/chenshujian/Desktop/qt/index/img/more.png",
+		"/Users/chenshujian/Desktop/qt/index/img/add.png",
+		"/Users/chenshujian/Desktop/qt/index/img/use.png",
+		"/Users/chenshujian/Desktop/qt/index/img/hide.png",
+		"/Users/chenshujian/Desktop/qt/index/img/line.png",
+		"/Users/chenshujian/Desktop/qt/index/img/close.png",
+		"/Users/chenshujian/Desktop/qt/index/img/leftArrow.png"
+	],
+	"LOCK_FILE" : "/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/index_autogen.dir/AutoRcc_index_img_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "index_img" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_index_img.cpp",
+	"RCC_EXECUTABLE" : "/Users/chenshujian/Qt/6.5.3/macos/./libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/index_autogen.dir/AutoRcc_index_img_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/chenshujian/Desktop/qt/index/index_img.qrc",
+	"VERBOSITY" : 0
+}

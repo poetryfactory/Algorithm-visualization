@@ -1,0 +1,8 @@
+/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/index.dir
+/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/edit_cache.dir
+/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
+/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/list_install_components.dir
+/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/install.dir
+/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/install/local.dir
+/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/install/strip.dir
+/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/index_autogen.dir
