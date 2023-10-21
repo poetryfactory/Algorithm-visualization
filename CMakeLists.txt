@@ -35,6 +35,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         myarrowitem.h
         myarrowitem.cpp
         uidefine.h
+        dlnode.h dlnode.cpp
+        mainwindow.h mainwindow.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Linuxfinal1 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
