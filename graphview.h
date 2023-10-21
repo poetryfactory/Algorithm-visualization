@@ -19,6 +19,7 @@
 #include <QVector>
 #include <QStack>
 #include <QQueue>
+#include "stackvisualizationwidget.h"
 
 class MyGraphicsView;
 class MyGraphicsVexItem;
@@ -101,7 +102,8 @@ class MyGraphicsVexItem : public QObject, public QGraphicsEllipseItem
 private:
     QBrush regBrush = QBrush(QColor(108,166,205));
     QBrush visitedBrush = QBrush(QColor(162,205,90));
-    QFont nameFont = QFont("Corbel", 13, QFont::Normal, true);
+    QBrush cauculateBrush = QBrush(QColor(255,255,102));
+    QFont nameFont = QFont("Corbel", 13, QFont::Bold, true);
 
     QTimeLine* curAnimation = nullptr;
     void startAnimation();
@@ -126,6 +128,7 @@ public:
     void showAnimation();
 
     QTimeLine* visit();
+    QTimeLine* cauculate();
 };
 
 //Summary:

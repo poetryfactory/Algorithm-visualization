@@ -14,9 +14,9 @@ SOURCES += \
     mainwindow.cpp \
     mybutton.cpp \
     mydialog.cpp \
-    myfunctioncallstack.cpp \
     slidepage.cpp \
     sonwindow.cpp \
+    stackvisualizationwidget.cpp \
     treepage.cpp
 
 HEADERS += \
@@ -24,9 +24,9 @@ HEADERS += \
     mainwindow.h \
     mybutton.h \
     mydialog.h \
-    myfunctioncallstack.h \
     slidepage.h \
     sonwindow.h \
+    stackvisualizationwidget.h \
     treepage.h
 
 FORMS += \

@@ -1,4 +1,5 @@
 #include "graphview.h"
+#include<iostream>
 
 MyGraphicsView::MyGraphicsView()
 {
@@ -22,6 +23,7 @@ MyGraphicsView::MyGraphicsView()
     root=new MyGraphicsVexItem(QPointF(590,150),10, vexID++);
     myGraphicsScene->addItem(root);
     myGraphicsScene->addItem(root->nameTag);
+    myGraphicsScene->addItem(root->valTag);
     vexes.push_back(root);
 }
 
@@ -65,6 +67,7 @@ MyGraphicsVexItem* MyGraphicsView::addVex(QPointF center, qreal radius)
     MyGraphicsVexItem *newVex = new MyGraphicsVexItem(center, radius, vexID++);
     myGraphicsScene->addItem(newVex);
     myGraphicsScene->addItem(newVex->nameTag);
+    myGraphicsScene->addItem(newVex->valTag);
     newVex->showAnimation();
     vexes.push_back(newVex);
     return newVex;
@@ -123,6 +126,8 @@ void MyGraphicsView::buildTree()
     for(int i=0;i<vexes.size();i++)
     {
         vexes[i]->setBrush(regBrush);
+        if(vexes[i]->valTag)
+            vexes[i]->valTag->hide();
         if(vexes[i]->nexts.size()==2){
             vexes[i]->left=vexes[i]->nexts[0]->center.rx()<vexes[i]->nexts[1]->center.rx()?vexes[i]->nexts[0]:vexes[i]->nexts[1];
             vexes[i]->right=vexes[i]->nexts[0]->center.rx()<vexes[i]->nexts[1]->center.rx()?vexes[i]->nexts[1]:vexes[i]->nexts[0];
@@ -154,10 +159,13 @@ void MyGraphicsView::buildTree()
         for(int i=0;i<j;i++)
         {
             myGraphicsScene->removeItem(nullVexes[i]->nameTag);
+            myGraphicsScene->removeItem(nullVexes[i]->valTag);
             if(nullVexes[i]->nameTag != nullptr)
             {
               delete nullVexes[i]->nameTag;
+              delete nullVexes[i]->valTag;
               nullVexes[i]->nameTag = nullptr;
+              nullVexes[i]->valTag = nullptr;
             }
             myGraphicsScene->removeItem(nullVexes[i]);
             if(nullVexes[i] != nullptr)
@@ -203,10 +211,13 @@ void MyGraphicsView::buildTree2()
         for(int i=0;i<j;i++)
         {
             myGraphicsScene->removeItem(nullVexes[i]->nameTag);
+            myGraphicsScene->removeItem(nullVexes[i]->nameTag);
             if(nullVexes[i]->nameTag != nullptr)
             {
-              delete nullVexes[i]->nameTag;
-              nullVexes[i]->nameTag = nullptr;
+                delete nullVexes[i]->nameTag;
+                delete nullVexes[i]->valTag;
+                nullVexes[i]->nameTag = nullptr;
+                nullVexes[i]->valTag = nullptr;
             }
             myGraphicsScene->removeItem(nullVexes[i]);
             if(nullVexes[i] != nullptr)
@@ -233,6 +244,8 @@ void MyGraphicsView::buildTree2()
     for(int i=0;i<vexes.size();i++)
     {
         vexes[i]->setBrush(regBrush);
+        if(vexes[i]->valTag)
+            vexes[i]->valTag->hide();
         if(vexes[i]->nexts.size()==2){
             vexes[i]->left=vexes[i]->nexts[0]->center.rx()<vexes[i]->nexts[1]->center.rx()?vexes[i]->nexts[0]:vexes[i]->nexts[1];
             vexes[i]->right=vexes[i]->nexts[0]->center.rx()<vexes[i]->nexts[1]->center.rx()?vexes[i]->nexts[1]:vexes[i]->nexts[0];
@@ -248,6 +261,7 @@ void MyGraphicsView::buildTree2()
                     MyGraphicsVexItem *next2 = new MyGraphicsVexItem(center2);
                     myGraphicsScene->addItem(next2);
                     myGraphicsScene->addItem(next2->nameTag);
+                    myGraphicsScene->addItem(next2->valTag);
                     vexes[i]->right=next2;
 
                     nullVexes.push_back(next2);
@@ -257,6 +271,7 @@ void MyGraphicsView::buildTree2()
                     MyGraphicsVexItem *next1 = new MyGraphicsVexItem(center1);
                     myGraphicsScene->addItem(next1);
                     myGraphicsScene->addItem(next1->nameTag);
+                    myGraphicsScene->addItem(next1->valTag);
 
                     vexes[i]->left=next1;
 
@@ -269,11 +284,13 @@ void MyGraphicsView::buildTree2()
                 MyGraphicsVexItem *next1 = new MyGraphicsVexItem(center1);
                 myGraphicsScene->addItem(next1);
                 myGraphicsScene->addItem(next1->nameTag);
+                myGraphicsScene->addItem(next1->valTag);
 
 
                 MyGraphicsVexItem *next2 = new MyGraphicsVexItem(center2);
                 myGraphicsScene->addItem(next2);
                 myGraphicsScene->addItem(next2->nameTag);
+                myGraphicsScene->addItem(next2->valTag);
 
                 vexes[i]->left=next1;
                 vexes[i]->right=next2;
@@ -447,7 +464,21 @@ void MyGraphicsView::BFS(MyGraphicsVexItem * head)
 
 void MyGraphicsView::SolveMaximizeStepsByDFS(MyGraphicsVexItem* head)
 {
-    //if(head==nullptr)
+    if(head->nameText=="nullptr")
+    {
+        addAnimation(head->visit());
+        head->valTag->setText(QString::number(cauculateStep(head)));
+        addAnimation(head->cauculate());
+        head->valTag->show();
+        return;
+    }
+    addAnimation(head->visit());
+    SolveMaximizeStepsByDFS(head->left);
+    SolveMaximizeStepsByDFS(head->right);
+    head->valTag->setText(QString::number(cauculateStep(head)));
+    addAnimation(head->cauculate());
+    resultOutput->setText("最大层数:"+head->valTag->text());
+    resultOutput->setFont(QFont("Segoe Print",22,QFont::Bold));
 }
 
 void MyGraphicsView::init()
@@ -481,6 +512,7 @@ void MyGraphicsView::init()
 
     root=new MyGraphicsVexItem(QPointF(590,150),10, vexID++);
     myGraphicsScene->addItem(root->nameTag);
+    myGraphicsScene->addItem(root->valTag);
     myGraphicsScene->addItem(root);
     vexes.push_back(root);
 }
@@ -499,6 +531,14 @@ MyGraphicsVexItem::MyGraphicsVexItem(QPointF _center, qreal _r, int nameID, QGra
     nameTag->setZValue(this->zValue());
     nameTag->setBrush(Qt::black);
     nameTag->setFlags(QGraphicsItem::ItemIsSelectable);
+    valTag = new QGraphicsSimpleTextItem();
+    valTag->setPos(center.x()-5,center.y()-10);
+    valTag->setFont(nameFont);
+    valTag->setText("0");
+    valTag->setZValue(this->zValue());
+    valTag->setBrush(Qt::black);
+    valTag->setFlags(QGraphicsItem::ItemIsSelectable);
+    valTag->hide();
     this->setPen(Qt::NoPen);
     this->setBrush(regBrush);
 }
@@ -509,11 +549,18 @@ MyGraphicsVexItem::MyGraphicsVexItem(QPointF _center, qreal _r, QGraphicsItem *p
     radius(_r){
     nameText = "nullptr";
     nameTag = new QGraphicsSimpleTextItem();
-    nameTag->setPos(center + QPointF(radius, - radius - QFontMetrics(nameFont).height()));
+    nameTag->setPos(center);
     nameTag->setFont(nameFont);
     nameTag->setText(nameText);
     nameTag->setZValue(this->zValue());
     nameTag->setBrush(Qt::black);
+    valTag = new QGraphicsSimpleTextItem();
+    valTag->setPos(center.x()-5,center.y()-10);
+    valTag->setFont(nameFont);
+    valTag->setText("0");
+    valTag->setZValue(this->zValue());
+    valTag->setBrush(Qt::black);
+    valTag->hide();
     QPen pen(QColor(108,166,205));
     pen.setStyle(Qt::DashLine);
     pen.setWidth(3);
@@ -549,6 +596,23 @@ QTimeLine* MyGraphicsVexItem::visit()
     return timeLine;
 }
 
+QTimeLine* MyGraphicsVexItem::cauculate()
+{
+    QTimeLine *timeLine = new QTimeLine(500, this);
+    timeLine->setFrameRange(0, 200);
+    QEasingCurve curve = QEasingCurve::OutBounce;
+    qreal baseRadius = 26;
+    qreal difRadius = -6;
+    connect(timeLine, &QTimeLine::frameChanged, timeLine, [=](int frame){
+        this->setBrush(cauculateBrush);
+        qreal curProgress = curve.valueForProgress(frame / 200.0);
+        qreal curRadius = baseRadius + difRadius * curProgress;//20
+        this->setRect(QRectF(center.x() - curRadius, center.y() - curRadius, curRadius * 2, curRadius * 2));
+        this->valTag->show();
+    });
+    return timeLine;
+}
+
 void MyGraphicsVexItem::showAnimation(){
     QTimeLine *timeLine = new QTimeLine(500, this);
     timeLine->setFrameRange(0, 200);
@@ -572,7 +636,7 @@ void MyGraphicsVexItem::startAnimation(){
 
 int MyGraphicsView::cauculateStep(MyGraphicsVexItem * node)
 {
-    if(node==nullptr)   return 0;
+    if(node->nameText=="nullptr")   return 0;
     return std::max(cauculateStep(node->left),cauculateStep(node->right))+1;
 }
 

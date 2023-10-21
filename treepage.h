@@ -11,6 +11,7 @@
 #include <QPushButton>
 #include <QLineEdit>
 #include <QTextEdit>
+#include <QString>
 #include "mybutton.h"
 #include "sonwindow.h"
 #include "slidepage.h"
@@ -46,6 +47,7 @@ public:
     SlidePage *infoPage = nullptr;
 
     int choice=0;
+    QString modeText = "";
 
 
 signals:

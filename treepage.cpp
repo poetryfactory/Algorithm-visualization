@@ -8,6 +8,15 @@ TreePage::TreePage(QWidget *parent)
     this->setAttribute(Qt::WA_TranslucentBackground);
     this->setWindowIcon(QIcon(":/new/prefix1/img/circle.ico"));
 
+    QLineEdit * modeLE = new QLineEdit();
+    modeLE->setText("未选择");
+    modeLE->setFont(QFont("Franklin Gothic Demi",24));
+    modeLE->setParent(this);
+    modeLE->setStyleSheet("padding:0px;border:0px");
+    modeLE->move(1550,740);
+    modeLE->resize(250,100);
+    modeLE->setFocusPolicy(Qt::NoFocus);
+
     closeBtn=new mybutton(":/new/prefix1/img/close.png");
     closeBtn->setParent(this);//让closeBtn对象依赖在MainWindow窗口中
     closeBtn->move(1700,50);//设置按钮在窗口中的位置
@@ -48,6 +57,8 @@ TreePage::TreePage(QWidget *parent)
     connect(addBtn,&mybutton::clicked,this,[=](){
         this->son->createNew();
         choice=0;
+        modeText = "未选择";
+        modeLE->setText(modeText);
     });
 
     moreBtn=new mybutton(":/new/prefix1/img/more.png");
@@ -63,7 +74,7 @@ TreePage::TreePage(QWidget *parent)
     son->move(60,100);
 
     QLineEdit * le1 = new QLineEdit();
-    le1->setText("traversal");
+    le1->setText("树可视化");
     le1->setFont(QFont("Segoe Print",36,QFont::Bold));
     le1->setParent(this);
     le1->setStyleSheet("padding:0px;border:0px");
@@ -72,7 +83,7 @@ TreePage::TreePage(QWidget *parent)
     le1->setFocusPolicy(Qt::NoFocus);
 
     QLineEdit * le2 = new QLineEdit();
-    le2->setText("mode");
+    le2->setText("模式");
     le2->setFont(QFont("Segoe Print",28,QFont::Bold));
     le2->setParent(this);
     le2->setStyleSheet("padding:0px;border:0px");
@@ -81,7 +92,7 @@ TreePage::TreePage(QWidget *parent)
     le2->setFocusPolicy(Qt::NoFocus);
 
     QLineEdit * le3 = new QLineEdit();
-    le3->setText("RUN");
+    le3->setText("开始遍历");
     le3->setFont(QFont("Calibri",13,QFont::Bold));
     le3->setParent(this);
     le3->setStyleSheet("padding:0px;border:0px");
@@ -90,7 +101,7 @@ TreePage::TreePage(QWidget *parent)
     le3->setFocusPolicy(Qt::NoFocus);
 
     QLineEdit * le4 = new QLineEdit();
-    le4->setText("CREATE A NEW TREE");
+    le4->setText("新建一个树");
     le4->setFont(QFont("Calibri",13,QFont::Bold));
     le4->setParent(this);
     le4->setStyleSheet("padding:0px;border:0px");
@@ -99,7 +110,7 @@ TreePage::TreePage(QWidget *parent)
     le4->setFocusPolicy(Qt::NoFocus);
 
     QLineEdit * le5 = new QLineEdit();
-    le5->setText("VisualTree 1.0.0");
+    le5->setText("树的可视化");
     le5->setFont(QFont("Franklin Gothic Demi",18));
     le5->setParent(this);
     le5->setStyleSheet("padding:0px;border:0px");
@@ -107,8 +118,17 @@ TreePage::TreePage(QWidget *parent)
     le5->resize(400,100);
     le5->setFocusPolicy(Qt::NoFocus);
 
+    QLineEdit * le6 = new QLineEdit();
+    le6->setText("你选择的模式为:");
+    le6->setFont(QFont("Franklin Gothic Demi",24));
+    le6->setParent(this);
+    le6->setStyleSheet("padding:0px;border:0px");
+    le6->move(1300,740);
+    le6->resize(250,100);
+    le6->setFocusPolicy(Qt::NoFocus);
+
     QPushButton * btn1=new QPushButton();
-    btn1->setText("pro");
+    btn1->setText("前序");
     btn1->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
                                  "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
     btn1->setParent(this);
@@ -118,10 +138,12 @@ TreePage::TreePage(QWidget *parent)
     connect(btn1,&QPushButton::clicked,this,[=](){
         this->son->build();
         choice=1;
+        modeText = "前序遍历";
+        modeLE->setText(modeText);
     });
 
     QPushButton * btn2=new QPushButton();
-    btn2->setText("in");
+    btn2->setText("中序");
     btn2->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
                                  "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
     btn2->setParent(this);
@@ -130,10 +152,12 @@ TreePage::TreePage(QWidget *parent)
     connect(btn2,&QPushButton::clicked,this,[=](){
         this->son->build();
         choice=2;
+        modeText = "中序遍历";
+        modeLE->setText(modeText);
     });
 
     QPushButton * btn3=new QPushButton();
-    btn3->setText("pos");
+    btn3->setText("后序");
     btn3->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
                                  "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
     btn3->setParent(this);
@@ -142,10 +166,12 @@ TreePage::TreePage(QWidget *parent)
     connect(btn3,&QPushButton::clicked,this,[=](){
         this->son->build();
         choice=3;
+        modeText = "后序遍历";
+        modeLE->setText(modeText);
     });
 
     QPushButton * btn4=new QPushButton();
-    btn4->setText("morris");
+    btn4->setText("morris中序");
     btn4->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
                                  "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
     btn4->setParent(this);
@@ -154,10 +180,12 @@ TreePage::TreePage(QWidget *parent)
     connect(btn4,&QPushButton::clicked,this,[=](){
         this->son->build2();
         choice=4;
+        modeText = "morris中序遍历";
+        modeLE->setText(modeText);
     });
 
     QPushButton * btn5=new QPushButton();
-    btn5->setText("BFS");
+    btn5->setText("BFS层序");
     btn5->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
                         "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
     btn5->setParent(this);
@@ -166,6 +194,8 @@ TreePage::TreePage(QWidget *parent)
     connect(btn5,&QPushButton::clicked,this,[=](){
         this->son->build();
         choice=5;
+        modeText = "层序遍历";
+        modeLE->setText(modeText);
     });
 
     QPushButton * btn6=new QPushButton();
@@ -178,9 +208,11 @@ TreePage::TreePage(QWidget *parent)
     connect(btn6,&QPushButton::clicked,this,[=](){
         this->son->build2();
         choice=6;
+        modeText = "求解最大层数";
+        modeLE->setText(modeText);
     });
 
-    codePage = new SlidePage(cornerRadius, "CODE", this);
+    codePage = new SlidePage(cornerRadius, "相关代码一览", this);
     connect(moreBtn,&QPushButton::clicked,this,[=](){
         if(slideFlag && !onShown){
             codePage->slideIn();
@@ -200,11 +232,11 @@ TreePage::TreePage(QWidget *parent)
     });
 
     QPushButton * slideBtn1=new QPushButton();
-    slideBtn1->setText("pro");
-    slideBtn1->setStyleSheet("QPushButton{background-color: rgba(255,255,255); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
-                                 "QPushButton:hover{background-color: rgba(58,143,192,20);}");
+    slideBtn1->setText("前序遍历");
+    slideBtn1->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
+                             "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
     slideBtn1->setParent(codePage);
-    slideBtn1->move(60,300);
+    slideBtn1->move(150,250);
     slideBtn1->resize(210,70);
     connect(btn1,&QPushButton::clicked,son,&SonWindow::build);
     connect(slideBtn1,&QPushButton::clicked,this,[=](){
@@ -215,11 +247,11 @@ TreePage::TreePage(QWidget *parent)
                        "    if(head==nullptr){\n"
                        "        return;\n"
                        "    }\n"
-                       "    cout << head->val << \" \" << endl;\n"
+                       "    cout << head->val << \" \";\n"
                        "    f(head->left);\n"
                        "    f(head->right);\n"
                        "}\n");
-        code1->setFont(QFont("Calibri",10));
+        code1->setFont(QFont("Calibri",20));
         code1->setStyleSheet("padding:0px;border:0px");
         code1->move(30,60);
         code1->resize(400,340);
@@ -228,11 +260,11 @@ TreePage::TreePage(QWidget *parent)
     });
 
     QPushButton * slideBtn2=new QPushButton();
-    slideBtn2->setText("in");
-    slideBtn2->setStyleSheet("QPushButton{background-color: rgba(255,255,255); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
-                                 "QPushButton:hover{background-color: rgba(58,143,192,20);}");
+    slideBtn2->setText("中序遍历");
+    slideBtn2->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
+                             "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
     slideBtn2->setParent(codePage);
-    slideBtn2->move(60,400);
+    slideBtn2->move(150,390);
     slideBtn2->resize(210,70);
     connect(btn1,&QPushButton::clicked,son,&SonWindow::build);
     connect(slideBtn2,&QPushButton::clicked,this,[=](){
@@ -243,11 +275,11 @@ TreePage::TreePage(QWidget *parent)
                        "    if(head==nullptr){\n"
                        "        return;\n"
                        "    }\n"
-                       "    cout << head->val << " " << endl;\n"
+                       "    cout << head->val << \" \";\n"
                        "    f(head->left);\n"
                        "    f(head->right);\n"
                        "}\n");
-        code2->setFont(QFont("Calibri",10));
+        code2->setFont(QFont("Calibri",20));
         code2->setStyleSheet("padding:0px;border:0px");
         code2->move(30,60);
         code2->resize(400,340);
@@ -256,12 +288,12 @@ TreePage::TreePage(QWidget *parent)
     });
 
     QPushButton * slideBtn3=new QPushButton();
-    slideBtn3->setText("pos");
-    slideBtn3->setStyleSheet("QPushButton{background-color: rgba(255,255,255); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
-                                 "QPushButton:hover{background-color: rgba(58,143,192,20);}");
+    slideBtn3->setText("后序遍历");
+    slideBtn3->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
+                             "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
     slideBtn3->setParent(codePage);
-    slideBtn3->move(60,500);
-    slideBtn2->resize(210,70);
+    slideBtn3->move(150,530);
+    slideBtn3->resize(210,70);
     connect(btn1,&QPushButton::clicked,son,&SonWindow::build);
     connect(slideBtn3,&QPushButton::clicked,this,[=](){
         MyDialog * dlg3=new MyDialog(500,440);
@@ -273,9 +305,9 @@ TreePage::TreePage(QWidget *parent)
                        "    }\n"
                        "    f(head->left);\n"
                        "    f(head->right);\n"
-                       "    cout << head->val << " " << endl;\n"
+                       "    cout << head->val << \" \";\n"
                        "}\n");
-        code3->setFont(QFont("Calibri",10));
+        code3->setFont(QFont("Calibri",20));
         code3->setStyleSheet("padding:0px;border:0px");
         code3->move(30,60);
         code3->resize(400,340);
@@ -285,10 +317,10 @@ TreePage::TreePage(QWidget *parent)
 
     QPushButton * slideBtn4=new QPushButton();
     slideBtn4->setText("morris");
-    slideBtn4->setStyleSheet("QPushButton{background-color: rgba(255,255,255); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
-                                 "QPushButton:hover{background-color: rgba(58,143,192,20);}");
+    slideBtn4->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
+                             "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
     slideBtn4->setParent(codePage);
-    slideBtn4->move(60,600);
+    slideBtn4->move(150,670);
     slideBtn4->resize(210,70);
     connect(btn1,&QPushButton::clicked,son,&SonWindow::build);
     connect(slideBtn4,&QPushButton::clicked,this,[=](){
@@ -320,19 +352,79 @@ TreePage::TreePage(QWidget *parent)
                        "        cur = cur->right;\n"
                        "    }\n"
                        "}");
-        code4->setFont(QFont("Calibri",10));
+        code4->setFont(QFont("Calibri",20));
         code4->setStyleSheet("padding:0px;border:0px");
-        code4->move(20,60);
+        code4->move(30,60);
         code4->resize(770,900);
         code4->setFocusPolicy(Qt::NoFocus);
         dlg4->show();
+    });
+
+    QPushButton * slideBtn5=new QPushButton();
+    slideBtn5->setText("BFS");
+    slideBtn5->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 43px; font-family: Calibri;}"
+                             "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
+    slideBtn5->setParent(codePage);
+    slideBtn5->move(150,810);
+    slideBtn5->resize(210,70);
+    connect(slideBtn5,&QPushButton::clicked,this,[=](){
+        MyDialog * dlg5=new MyDialog(500,440);
+        QTextEdit * code5=new QTextEdit(dlg5);
+        code5->setText("void BFS(TreeNode * head)\n"
+                       "{\n"
+                       "    if (head == nullptr) {\n"
+                       "        return;\n"
+                       "    }\n"
+                       "    queue<TreeNode*> q;\n"
+                       "    q.push(head);\n"
+                       "    while (!q.empty())\n"
+                       "    {\n"
+                       "        auto Node = q.front();\n"
+                       "        q.pop();\n"
+                       "        cout<<Node->val<<\" \";\n"
+                       "        if(Node->left)  q.push(Node->left);\n"
+                       "        if(Node->right)  q.push(Node->left);\n"
+                       "    }\n"
+                       "    return\n"
+                       "}");
+        code5->setFont(QFont("Calibri",20));
+        code5->setStyleSheet("padding:0px;border:0px");
+        code5->move(30,60);
+        code5->resize(400,340);
+        code5->setFocusPolicy(Qt::NoFocus);
+        dlg5->show();
+    });
+
+    QPushButton * slideBtn6=new QPushButton();
+    slideBtn6->setText("DFS求最大深度");
+    slideBtn6->setStyleSheet("QPushButton{background-color: rgba(58,143,192,20); border-radius: 15px; font: bold 30px; font-family: Calibri;}"
+                             "QPushButton:pressed{background-color: rgba(84,255,159,20);}");
+    slideBtn6->setParent(codePage);
+    slideBtn6->move(150,950);
+    slideBtn6->resize(210,70);
+    connect(slideBtn6,&QPushButton::clicked,this,[=](){
+        MyDialog * dlg6=new MyDialog(500,440);
+        QTextEdit * code6=new QTextEdit(dlg6);
+        code6->setText("int DFS(TreeNode * head)\n"
+                       "{\n"
+                       "    if (head == nullptr) {\n"
+                       "        return 0;\n"
+                       "    }\n"
+                       "    return std::max(dfs(head->left),dfs(head->right))+1\n"
+                       "}");
+        code6->setFont(QFont("Calibri",20));
+        code6->setStyleSheet("padding:0px;border:0px");
+        code6->move(30,60);
+        code6->resize(400,340);
+        code6->setFocusPolicy(Qt::NoFocus);
+        dlg6->show();
     });
 
     QTextEdit * text=new QTextEdit(codePage);
     text->setText("(cpp)");
     text->setFont(QFont("Calibri",13));
     text->setStyleSheet("padding:0px;border:0px");
-    text->move(350,105);
+    text->move(450,105);
     text->resize(100,70);
     text->setFocusPolicy(Qt::NoFocus);
 
@@ -355,41 +447,41 @@ TreePage::TreePage(QWidget *parent)
         slideFlag2 =true;
     });
 
-    QLineEdit * le6 = new QLineEdit();
-    le6->setText("version:                 1.0.0");
-    le6->setFont(QFont("Calibri",13));
-    le6->setParent(infoPage);
-    le6->setStyleSheet("padding:0px;border:0px");
-    le6->move(60,200);
-    le6->resize(400,100);
-    le6->setFocusPolicy(Qt::NoFocus);
+    QLineEdit * slideLE1 = new QLineEdit();
+    slideLE1->setText("version:                 1.0.0");
+    slideLE1->setFont(QFont("Calibri",13));
+    slideLE1->setParent(infoPage);
+    slideLE1->setStyleSheet("padding:0px;border:0px");
+    slideLE1->move(60,200);
+    slideLE1->resize(400,100);
+    slideLE1->setFocusPolicy(Qt::NoFocus);
 
-    QLineEdit * le7 = new QLineEdit();
-    le7->setText("last-upd:             2022.9.16");
-    le7->setFont(QFont("Calibri",13));
-    le7->setParent(infoPage);
-    le7->setStyleSheet("padding:0px;border:0px");
-    le7->move(60,300);
-    le7->resize(400,100);
-    le7->setFocusPolicy(Qt::NoFocus);
+    QLineEdit * slideLE2 = new QLineEdit();
+    slideLE2->setText("last-upd:             2022.9.16");
+    slideLE2->setFont(QFont("Calibri",13));
+    slideLE2->setParent(infoPage);
+    slideLE2->setStyleSheet("padding:0px;border:0px");
+    slideLE2->move(60,300);
+    slideLE2->resize(400,100);
+    slideLE2->setFocusPolicy(Qt::NoFocus);
 
-    QLineEdit * le8 = new QLineEdit();
-    le8->setText("author:                   cc");
-    le8->setFont(QFont("Calibri",13));
-    le8->setParent(infoPage);
-    le8->setStyleSheet("padding:0px;border:0px");
-    le8->move(60,400);
-    le8->resize(400,100);
-    le8->setFocusPolicy(Qt::NoFocus);
+    QLineEdit * slideLE3 = new QLineEdit();
+    slideLE3->setText("author:                   cc");
+    slideLE3->setFont(QFont("Calibri",13));
+    slideLE3->setParent(infoPage);
+    slideLE3->setStyleSheet("padding:0px;border:0px");
+    slideLE3->move(60,400);
+    slideLE3->resize(400,100);
+    slideLE3->setFocusPolicy(Qt::NoFocus);
 
-    QLineEdit * le9 = new QLineEdit();
-    le9->setText("https:github.com/troublemkerrr");
-    le9->setFont(QFont("Calibri",10));
-    le9->setParent(infoPage);
-    le9->setStyleSheet("padding:0px;border:0px");
-    le9->move(60,1020);
-    le9->resize(400,100);
-    le9->setFocusPolicy(Qt::NoFocus);
+    QLineEdit * slideLE4 = new QLineEdit();
+    slideLE4->setText("https:github.com/troublemkerrr");
+    slideLE4->setFont(QFont("Calibri",10));
+    slideLE4->setParent(infoPage);
+    slideLE4->setStyleSheet("padding:0px;border:0px");
+    slideLE4->move(60,1020);
+    slideLE4->resize(400,100);
+    slideLE4->setFocusPolicy(Qt::NoFocus);
 
     //just an icon
     mybutton * github=new mybutton(":/new/prefix1/img/github.png");
