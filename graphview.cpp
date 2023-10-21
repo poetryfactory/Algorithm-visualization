@@ -410,16 +410,16 @@ void MyGraphicsView::morris(MyGraphicsVexItem * head)
 
     while (cur!=nullptr && cur->nameText != "nullptr") { //when cur is nullptr,stop
         addAnimation(cur->visit());
-        mostRight = cur->left;
-        if (mostRight != nullptr && mostRight->nameText != "nullptr")
+        if (cur->left!=nullptr&&cur->left->nameText!="nullptr")
         { //cur has left subtree
-            while (mostRight->right->nameText != "nullptr" && mostRight->right->nameText != cur->nameText) { 
+            mostRight = cur->left;
+            while (mostRight->right->nameText != "nullptr" && mostRight->right->nameText != cur->nameText) {
                 mostRight = mostRight->right;
             }
             if (mostRight->right->nameText == "nullptr") { //arrived cur for the first time
                 addAnimation(changeName(cur->nameText,mostRight->right));
-                resultOutput->insertPlainText(" "+cur->nameText);
-                resultOutput->setFont(QFont("Segoe Print",22,QFont::Bold));
+                //resultOutput->insertPlainText(" "+cur->nameText);
+                //resultOutput->setFont(QFont("Segoe Print",22,QFont::Bold));
                 cur = cur->left;
                 continue;
             } else { //second time
@@ -435,6 +435,8 @@ void MyGraphicsView::morris(MyGraphicsVexItem * head)
             for(int i=0;i<vexes.size();i++)
             {
                 if(vexes[i]->nameText==cur->right->nameText){
+                    resultOutput->insertPlainText(" "+cur->nameText);
+                    resultOutput->setFont(QFont("Segoe Print",22,QFont::Bold));
                     cur=vexes[i];
                     break;
                 }
