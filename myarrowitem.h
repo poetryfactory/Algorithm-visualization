@@ -1,30 +1,20 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
-#include <QMainWindow>
-#include <QIcon>
-#include <QPixmap>
-#include <QPalette>
-#include "linklist.h"
-#include "clinklist.h"
-#include "dlinklist.h"
-namespace Ui {
-class MainWindow;
-}
-class MainWindow : public QMainWindow
+#ifndef MYARROWITEM_H
+#define MYARROWITEM_H
+#include <QGraphicsItem>
+//自定义箭头，用于Graphics画图架构
+class MyArrowItem : public QGraphicsItem
 {
-    Q_OBJECT
+    QRectF mboundingRect;
+    QLine line1,line2,line3;
+    int direction;
+    int arrowSize;
 public:
-    explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();
-private slots:
-    void on_pushButton1_clicked();
-    void on_pushButton2_clicked();
-    void on_pushButton3_clicked();
-private:
-    Ui::MainWindow *ui;
-    LinkList linkList;
-    CLinkList clinklist;
-    DLinkList dlinklist;
-    void initUI();
+    explicit MyArrowItem (int length, int dir=1, int size=1) ;
+    ~MyArrowItem();
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
+               QWidget *widget=0) Q_DECL_OVERRIDE ;
+    QRectF boundingRect() const Q_DECL_OVERRIDE ;
+#define SIZE1_WEIGHT 6
+#define SIZE1_HEIGHT 3
 };
-#endif // MAINWINDOW_H
+#endif // MYARROWITEM_H
