@@ -28,3 +28,4 @@ private:
     void initUI();
 };
 #endif // MAINWINDOW_H
+

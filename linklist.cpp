@@ -2,6 +2,7 @@
 #include <math.h>
 #include "linklist.h"
 #include "ui_linklist.h"
+#include "myarrowitem.h"
 void sleep(unsigned int msec);
 const QBrush LinkList::normalBursh=QBrush(Qt::GlobalColor::darkGray);
 const QBrush LinkList::visitedBrush=QBrush(Qt::GlobalColor::yellow);
@@ -356,7 +357,7 @@ sleep(sleepTime);
         insertLNode(countNode+1,QString::number(rand()%999999999));
         adjustController();
         ui->lineEditState->setPalette(Qt::GlobalColor::green);
-        ui->lineEditStatDe->setText("Insert Success!");
+        ui->lineEditState->setText("Insert Success!");
     }
 }
 //槽函数：点击删除

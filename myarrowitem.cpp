@@ -1,44 +1,60 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
+#include "myarrowitem.h"
+#include <QGraphicsScene>
+#include <QPainter>
+/*
+ * 构造函数 :
+ * length   : 长度
+ * dir      : 箭头方向   0：上     1：右      2：下        3：左
+ * size     ：箭头大小   (仅有两种   0：无箭头   1：默认大小)
+ */
+MyArrowItem::MyArrowItem ( int length, int dir, int size) : direction(dir), arrowSize(size)
 {
-    ui->setupUi(this);
-    initUI();
+    QPoint startP(0,0), endP, p1, p2;
+    switch (dir) {
+    case 0:
+        p1=p2=endP=QPoint(0,-length);
+        if(size)
+            p1+=QPoint(-SIZE1_HEIGHT,SIZE1_WEIGHT),p2+=QPoint(SIZE1_HEIGHT,SIZE1_WEIGHT);
+        mboundingRect=QRect(-SIZE1_HEIGHT,-length,SIZE1_HEIGHT<<1,length);
+        break;
+    case 1:
+        p1=p2=endP=QPoint(length,0);
+        if(size)
+            p1+=QPoint(-SIZE1_WEIGHT,-SIZE1_HEIGHT),p2+=QPoint(-SIZE1_WEIGHT,SIZE1_HEIGHT);
+        mboundingRect=QRect(0,-SIZE1_HEIGHT,length,SIZE1_HEIGHT<<1);
+        break;
+    case 2:
+        p1=p2=endP=QPoint(0,length);
+        if(size)
+            p1+=QPoint(-SIZE1_HEIGHT,-SIZE1_WEIGHT),p2+=QPoint(SIZE1_HEIGHT,-SIZE1_WEIGHT);
+        mboundingRect=QRect(-SIZE1_HEIGHT,0,SIZE1_HEIGHT<<1,length);
+        break;
+    case 3:
+        p1=p2=endP=QPoint(-length,0);
+        if(size)
+            p1+=QPoint(SIZE1_WEIGHT,SIZE1_HEIGHT),p2+=QPoint(SIZE1_WEIGHT,-SIZE1_HEIGHT);
+        mboundingRect=QRect(-length,-SIZE1_HEIGHT,length,SIZE1_HEIGHT<<1);
+        break;
+    default:
+        break;
+    }
+    line1=QLine(startP,endP);
+    line2=QLine(endP,p1);
+    line3=QLine(endP,p2);
 }
-MainWindow::~MainWindow()
+MyArrowItem::~MyArrowItem()
 {
-    delete ui;
 }
-void MainWindow::initUI()
+void MyArrowItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
+                        QWidget *widget)
 {
-    //set mainWindow's title and ico
-    this->setWindowTitle("LinkListVisualizer");
-    QIcon exeIcon(":/ico/resource/exe.ico");
-    this->setWindowIcon(exeIcon);
-    //set background image
-    QPixmap background(":/ico/resource/background.png");
-    QPalette palette;
-    palette.setBrush(QPalette::Background,background);
-    this->setPalette(palette);
-    //set tool tip
-    ui->pushButton1->setToolTip("<img src=':/tip/resource/linklist.png' /> ");
-    ui->pushButton2->setToolTip("<img src=':/tip/resource/clinklist.png' />");
-    ui->pushButton3->setToolTip("<img src=':/tip/resource/dlinklist.png' />");
+    Q_UNUSED(option);
+    Q_UNUSED(widget);
+    painter->drawLine(line1);
+    painter->drawLine(line2);
+    painter->drawLine(line3);
 }
-//LinkList
-void MainWindow::on_pushButton1_clicked()
+QRectF MyArrowItem::boundingRect() const
 {
-    linkList.show();
-}
-//Cicular LinkList
-void MainWindow::on_pushButton2_clicked()
-{
-    clinklist.show();
-}
-//Double LinkList
-void MainWindow::on_pushButton3_clicked()
-{
-    dlinklist.show();
+    return mboundingRect;
 }

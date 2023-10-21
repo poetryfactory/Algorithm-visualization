@@ -37,6 +37,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         uidefine.h
         dlnode.h dlnode.cpp
         mainwindow.h mainwindow.cpp
+        linklist.h linklist.cpp linklist.ui
+        dlinklist.h dlinklist.cpp dlinklist.ui
+        mainwindow.h mainwindow.cpp mainwindow.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Linuxfinal1 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
