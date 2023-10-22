@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-c562782a37d67e798955.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "index",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "index::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-index-Debug-0023920306039ec64c21.json",
+					"name" : "index",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "index_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-index_autogen-Debug-f73d6d677078d3267e99.json",
+					"name" : "index_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "index_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-index_autogen_timestamp_deps-Debug-6d026b51f01b89a1b5e7.json",
+					"name" : "index_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/build-index+wy-Desktop_Qt_6_5_0_MSVC2019_64bit-Debug",
+		"source" : "C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

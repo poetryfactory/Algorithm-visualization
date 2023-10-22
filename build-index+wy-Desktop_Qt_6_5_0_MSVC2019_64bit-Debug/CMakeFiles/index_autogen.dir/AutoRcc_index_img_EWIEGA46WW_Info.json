@@ -1,0 +1,32 @@
+{
+	"BUILD_DIR" : "C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/build-index+wy-Desktop_Qt_6_5_0_MSVC2019_64bit-Debug/index_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/build-index+wy-Desktop_Qt_6_5_0_MSVC2019_64bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/build-index+wy-Desktop_Qt_6_5_0_MSVC2019_64bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy",
+	"CMAKE_SOURCE_DIR" : "C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy",
+	"INCLUDE_DIR" : "C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/build-index+wy-Desktop_Qt_6_5_0_MSVC2019_64bit-Debug/index_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy/img/github.png",
+		"C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy/img/circle.ico",
+		"C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy/img/downArrow.png",
+		"C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy/img/rightArrow.png",
+		"C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy/img/more.png",
+		"C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy/img/add.png",
+		"C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy/img/use.png",
+		"C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy/img/hide.png",
+		"C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy/img/line.png",
+		"C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy/img/close.png",
+		"C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy/img/leftArrow.png"
+	],
+	"LOCK_FILE" : "C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/build-index+wy-Desktop_Qt_6_5_0_MSVC2019_64bit-Debug/CMakeFiles/index_autogen.dir/AutoRcc_index_img_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "index_img" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_index_img.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.5.0/msvc2019_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/build-index+wy-Desktop_Qt_6_5_0_MSVC2019_64bit-Debug/CMakeFiles/index_autogen.dir/AutoRcc_index_img_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/admin/Desktop/Algorithm-visualization-csj-features/Algorithm-visualization-csj-features/Desktop/index+wy/index+wy/index_img.qrc",
+	"VERBOSITY" : 0
+}
