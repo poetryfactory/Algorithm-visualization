@@ -30,6 +30,16 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         slidepage.h slidepage.cpp
         mydialog.h mydialog.cpp
         graphview.h graphview.cpp
+        list.qrc
+        list_mainwindow.h list_mainwindow.cpp
+        listpage.h listpage.cpp
+        linklist.h linklist.cpp
+        lnode.h lnode.cpp
+        myarrowitem.h myarrowitem.cpp
+        uidefine.h
+        clinklist.h clinklist.cpp
+        dlinklist.h dlinklist.cpp
+        dlnode.h dlnode.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET index APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

@@ -7,6 +7,7 @@ sonwindow::sonwindow()
     this->setMouseTracking(true);
     this->setCursor(Qt::CrossCursor);
 
+
     /*gv=new MyGraphicsView();
     gv->setParent(this);
     gv->show();*/

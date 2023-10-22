@@ -86,10 +86,17 @@ index_autogen/EWIEGA46WW/qrc_index_img.cpp: /Users/chenshujian/Qt/6.5.3/macos/./
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for index_img.qrc"
 	/Users/chenshujian/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cmake_autorcc /Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/index_autogen.dir/AutoRcc_index_img_EWIEGA46WW_Info.json Debug
 
+index_autogen/EWIEGA46WW/qrc_list.cpp: /Users/chenshujian/Desktop/qt/index/list.qrc
+index_autogen/EWIEGA46WW/qrc_list.cpp: CMakeFiles/index_autogen.dir/AutoRcc_list_EWIEGA46WW_Info.json
+index_autogen/EWIEGA46WW/qrc_list.cpp: /Users/chenshujian/Desktop/qt/index/img2/list.jpg
+index_autogen/EWIEGA46WW/qrc_list.cpp: /Users/chenshujian/Qt/6.5.3/macos/./libexec/rcc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for list.qrc"
+	/Users/chenshujian/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cmake_autorcc /Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/index_autogen.dir/AutoRcc_list_EWIEGA46WW_Info.json Debug
+
 CMakeFiles/index.dir/index_autogen/mocs_compilation.cpp.o: CMakeFiles/index.dir/flags.make
 CMakeFiles/index.dir/index_autogen/mocs_compilation.cpp.o: index_autogen/mocs_compilation.cpp
 CMakeFiles/index.dir/index_autogen/mocs_compilation.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/index.dir/index_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/index.dir/index_autogen/mocs_compilation.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/index_autogen/mocs_compilation.cpp.o -MF CMakeFiles/index.dir/index_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/index.dir/index_autogen/mocs_compilation.cpp.o -c /Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/index_autogen/mocs_compilation.cpp
 
 CMakeFiles/index.dir/index_autogen/mocs_compilation.cpp.i: cmake_force
@@ -103,7 +110,7 @@ CMakeFiles/index.dir/index_autogen/mocs_compilation.cpp.s: cmake_force
 CMakeFiles/index.dir/main.cpp.o: CMakeFiles/index.dir/flags.make
 CMakeFiles/index.dir/main.cpp.o: /Users/chenshujian/Desktop/qt/index/main.cpp
 CMakeFiles/index.dir/main.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/index.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/index.dir/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/main.cpp.o -MF CMakeFiles/index.dir/main.cpp.o.d -o CMakeFiles/index.dir/main.cpp.o -c /Users/chenshujian/Desktop/qt/index/main.cpp
 
 CMakeFiles/index.dir/main.cpp.i: cmake_force
@@ -117,7 +124,7 @@ CMakeFiles/index.dir/main.cpp.s: cmake_force
 CMakeFiles/index.dir/index_mainwindow.cpp.o: CMakeFiles/index.dir/flags.make
 CMakeFiles/index.dir/index_mainwindow.cpp.o: /Users/chenshujian/Desktop/qt/index/index_mainwindow.cpp
 CMakeFiles/index.dir/index_mainwindow.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/index.dir/index_mainwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/index.dir/index_mainwindow.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/index_mainwindow.cpp.o -MF CMakeFiles/index.dir/index_mainwindow.cpp.o.d -o CMakeFiles/index.dir/index_mainwindow.cpp.o -c /Users/chenshujian/Desktop/qt/index/index_mainwindow.cpp
 
 CMakeFiles/index.dir/index_mainwindow.cpp.i: cmake_force
@@ -131,7 +138,7 @@ CMakeFiles/index.dir/index_mainwindow.cpp.s: cmake_force
 CMakeFiles/index.dir/mybutton.cpp.o: CMakeFiles/index.dir/flags.make
 CMakeFiles/index.dir/mybutton.cpp.o: /Users/chenshujian/Desktop/qt/index/mybutton.cpp
 CMakeFiles/index.dir/mybutton.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/index.dir/mybutton.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/index.dir/mybutton.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/mybutton.cpp.o -MF CMakeFiles/index.dir/mybutton.cpp.o.d -o CMakeFiles/index.dir/mybutton.cpp.o -c /Users/chenshujian/Desktop/qt/index/mybutton.cpp
 
 CMakeFiles/index.dir/mybutton.cpp.i: cmake_force
@@ -145,7 +152,7 @@ CMakeFiles/index.dir/mybutton.cpp.s: cmake_force
 CMakeFiles/index.dir/detailpage.cpp.o: CMakeFiles/index.dir/flags.make
 CMakeFiles/index.dir/detailpage.cpp.o: /Users/chenshujian/Desktop/qt/index/detailpage.cpp
 CMakeFiles/index.dir/detailpage.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/index.dir/detailpage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/index.dir/detailpage.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/detailpage.cpp.o -MF CMakeFiles/index.dir/detailpage.cpp.o.d -o CMakeFiles/index.dir/detailpage.cpp.o -c /Users/chenshujian/Desktop/qt/index/detailpage.cpp
 
 CMakeFiles/index.dir/detailpage.cpp.i: cmake_force
@@ -159,7 +166,7 @@ CMakeFiles/index.dir/detailpage.cpp.s: cmake_force
 CMakeFiles/index.dir/sonwindow.cpp.o: CMakeFiles/index.dir/flags.make
 CMakeFiles/index.dir/sonwindow.cpp.o: /Users/chenshujian/Desktop/qt/index/sonwindow.cpp
 CMakeFiles/index.dir/sonwindow.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/index.dir/sonwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/index.dir/sonwindow.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/sonwindow.cpp.o -MF CMakeFiles/index.dir/sonwindow.cpp.o.d -o CMakeFiles/index.dir/sonwindow.cpp.o -c /Users/chenshujian/Desktop/qt/index/sonwindow.cpp
 
 CMakeFiles/index.dir/sonwindow.cpp.i: cmake_force
@@ -173,7 +180,7 @@ CMakeFiles/index.dir/sonwindow.cpp.s: cmake_force
 CMakeFiles/index.dir/slidepage.cpp.o: CMakeFiles/index.dir/flags.make
 CMakeFiles/index.dir/slidepage.cpp.o: /Users/chenshujian/Desktop/qt/index/slidepage.cpp
 CMakeFiles/index.dir/slidepage.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/index.dir/slidepage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/index.dir/slidepage.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/slidepage.cpp.o -MF CMakeFiles/index.dir/slidepage.cpp.o.d -o CMakeFiles/index.dir/slidepage.cpp.o -c /Users/chenshujian/Desktop/qt/index/slidepage.cpp
 
 CMakeFiles/index.dir/slidepage.cpp.i: cmake_force
@@ -187,7 +194,7 @@ CMakeFiles/index.dir/slidepage.cpp.s: cmake_force
 CMakeFiles/index.dir/mydialog.cpp.o: CMakeFiles/index.dir/flags.make
 CMakeFiles/index.dir/mydialog.cpp.o: /Users/chenshujian/Desktop/qt/index/mydialog.cpp
 CMakeFiles/index.dir/mydialog.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/index.dir/mydialog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/index.dir/mydialog.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/mydialog.cpp.o -MF CMakeFiles/index.dir/mydialog.cpp.o.d -o CMakeFiles/index.dir/mydialog.cpp.o -c /Users/chenshujian/Desktop/qt/index/mydialog.cpp
 
 CMakeFiles/index.dir/mydialog.cpp.i: cmake_force
@@ -201,7 +208,7 @@ CMakeFiles/index.dir/mydialog.cpp.s: cmake_force
 CMakeFiles/index.dir/graphview.cpp.o: CMakeFiles/index.dir/flags.make
 CMakeFiles/index.dir/graphview.cpp.o: /Users/chenshujian/Desktop/qt/index/graphview.cpp
 CMakeFiles/index.dir/graphview.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/index.dir/graphview.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/index.dir/graphview.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/graphview.cpp.o -MF CMakeFiles/index.dir/graphview.cpp.o.d -o CMakeFiles/index.dir/graphview.cpp.o -c /Users/chenshujian/Desktop/qt/index/graphview.cpp
 
 CMakeFiles/index.dir/graphview.cpp.i: cmake_force
@@ -212,10 +219,122 @@ CMakeFiles/index.dir/graphview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/index.dir/graphview.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenshujian/Desktop/qt/index/graphview.cpp -o CMakeFiles/index.dir/graphview.cpp.s
 
+CMakeFiles/index.dir/list_mainwindow.cpp.o: CMakeFiles/index.dir/flags.make
+CMakeFiles/index.dir/list_mainwindow.cpp.o: /Users/chenshujian/Desktop/qt/index/list_mainwindow.cpp
+CMakeFiles/index.dir/list_mainwindow.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/index.dir/list_mainwindow.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/list_mainwindow.cpp.o -MF CMakeFiles/index.dir/list_mainwindow.cpp.o.d -o CMakeFiles/index.dir/list_mainwindow.cpp.o -c /Users/chenshujian/Desktop/qt/index/list_mainwindow.cpp
+
+CMakeFiles/index.dir/list_mainwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/index.dir/list_mainwindow.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenshujian/Desktop/qt/index/list_mainwindow.cpp > CMakeFiles/index.dir/list_mainwindow.cpp.i
+
+CMakeFiles/index.dir/list_mainwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/index.dir/list_mainwindow.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenshujian/Desktop/qt/index/list_mainwindow.cpp -o CMakeFiles/index.dir/list_mainwindow.cpp.s
+
+CMakeFiles/index.dir/listpage.cpp.o: CMakeFiles/index.dir/flags.make
+CMakeFiles/index.dir/listpage.cpp.o: /Users/chenshujian/Desktop/qt/index/listpage.cpp
+CMakeFiles/index.dir/listpage.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/index.dir/listpage.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/listpage.cpp.o -MF CMakeFiles/index.dir/listpage.cpp.o.d -o CMakeFiles/index.dir/listpage.cpp.o -c /Users/chenshujian/Desktop/qt/index/listpage.cpp
+
+CMakeFiles/index.dir/listpage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/index.dir/listpage.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenshujian/Desktop/qt/index/listpage.cpp > CMakeFiles/index.dir/listpage.cpp.i
+
+CMakeFiles/index.dir/listpage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/index.dir/listpage.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenshujian/Desktop/qt/index/listpage.cpp -o CMakeFiles/index.dir/listpage.cpp.s
+
+CMakeFiles/index.dir/linklist.cpp.o: CMakeFiles/index.dir/flags.make
+CMakeFiles/index.dir/linklist.cpp.o: /Users/chenshujian/Desktop/qt/index/linklist.cpp
+CMakeFiles/index.dir/linklist.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/index.dir/linklist.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/linklist.cpp.o -MF CMakeFiles/index.dir/linklist.cpp.o.d -o CMakeFiles/index.dir/linklist.cpp.o -c /Users/chenshujian/Desktop/qt/index/linklist.cpp
+
+CMakeFiles/index.dir/linklist.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/index.dir/linklist.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenshujian/Desktop/qt/index/linklist.cpp > CMakeFiles/index.dir/linklist.cpp.i
+
+CMakeFiles/index.dir/linklist.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/index.dir/linklist.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenshujian/Desktop/qt/index/linklist.cpp -o CMakeFiles/index.dir/linklist.cpp.s
+
+CMakeFiles/index.dir/lnode.cpp.o: CMakeFiles/index.dir/flags.make
+CMakeFiles/index.dir/lnode.cpp.o: /Users/chenshujian/Desktop/qt/index/lnode.cpp
+CMakeFiles/index.dir/lnode.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/index.dir/lnode.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/lnode.cpp.o -MF CMakeFiles/index.dir/lnode.cpp.o.d -o CMakeFiles/index.dir/lnode.cpp.o -c /Users/chenshujian/Desktop/qt/index/lnode.cpp
+
+CMakeFiles/index.dir/lnode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/index.dir/lnode.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenshujian/Desktop/qt/index/lnode.cpp > CMakeFiles/index.dir/lnode.cpp.i
+
+CMakeFiles/index.dir/lnode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/index.dir/lnode.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenshujian/Desktop/qt/index/lnode.cpp -o CMakeFiles/index.dir/lnode.cpp.s
+
+CMakeFiles/index.dir/myarrowitem.cpp.o: CMakeFiles/index.dir/flags.make
+CMakeFiles/index.dir/myarrowitem.cpp.o: /Users/chenshujian/Desktop/qt/index/myarrowitem.cpp
+CMakeFiles/index.dir/myarrowitem.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/index.dir/myarrowitem.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/myarrowitem.cpp.o -MF CMakeFiles/index.dir/myarrowitem.cpp.o.d -o CMakeFiles/index.dir/myarrowitem.cpp.o -c /Users/chenshujian/Desktop/qt/index/myarrowitem.cpp
+
+CMakeFiles/index.dir/myarrowitem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/index.dir/myarrowitem.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenshujian/Desktop/qt/index/myarrowitem.cpp > CMakeFiles/index.dir/myarrowitem.cpp.i
+
+CMakeFiles/index.dir/myarrowitem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/index.dir/myarrowitem.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenshujian/Desktop/qt/index/myarrowitem.cpp -o CMakeFiles/index.dir/myarrowitem.cpp.s
+
+CMakeFiles/index.dir/clinklist.cpp.o: CMakeFiles/index.dir/flags.make
+CMakeFiles/index.dir/clinklist.cpp.o: /Users/chenshujian/Desktop/qt/index/clinklist.cpp
+CMakeFiles/index.dir/clinklist.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/index.dir/clinklist.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/clinklist.cpp.o -MF CMakeFiles/index.dir/clinklist.cpp.o.d -o CMakeFiles/index.dir/clinklist.cpp.o -c /Users/chenshujian/Desktop/qt/index/clinklist.cpp
+
+CMakeFiles/index.dir/clinklist.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/index.dir/clinklist.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenshujian/Desktop/qt/index/clinklist.cpp > CMakeFiles/index.dir/clinklist.cpp.i
+
+CMakeFiles/index.dir/clinklist.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/index.dir/clinklist.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenshujian/Desktop/qt/index/clinklist.cpp -o CMakeFiles/index.dir/clinklist.cpp.s
+
+CMakeFiles/index.dir/dlinklist.cpp.o: CMakeFiles/index.dir/flags.make
+CMakeFiles/index.dir/dlinklist.cpp.o: /Users/chenshujian/Desktop/qt/index/dlinklist.cpp
+CMakeFiles/index.dir/dlinklist.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/index.dir/dlinklist.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/dlinklist.cpp.o -MF CMakeFiles/index.dir/dlinklist.cpp.o.d -o CMakeFiles/index.dir/dlinklist.cpp.o -c /Users/chenshujian/Desktop/qt/index/dlinklist.cpp
+
+CMakeFiles/index.dir/dlinklist.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/index.dir/dlinklist.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenshujian/Desktop/qt/index/dlinklist.cpp > CMakeFiles/index.dir/dlinklist.cpp.i
+
+CMakeFiles/index.dir/dlinklist.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/index.dir/dlinklist.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenshujian/Desktop/qt/index/dlinklist.cpp -o CMakeFiles/index.dir/dlinklist.cpp.s
+
+CMakeFiles/index.dir/dlnode.cpp.o: CMakeFiles/index.dir/flags.make
+CMakeFiles/index.dir/dlnode.cpp.o: /Users/chenshujian/Desktop/qt/index/dlnode.cpp
+CMakeFiles/index.dir/dlnode.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/index.dir/dlnode.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/dlnode.cpp.o -MF CMakeFiles/index.dir/dlnode.cpp.o.d -o CMakeFiles/index.dir/dlnode.cpp.o -c /Users/chenshujian/Desktop/qt/index/dlnode.cpp
+
+CMakeFiles/index.dir/dlnode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/index.dir/dlnode.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenshujian/Desktop/qt/index/dlnode.cpp > CMakeFiles/index.dir/dlnode.cpp.i
+
+CMakeFiles/index.dir/dlnode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/index.dir/dlnode.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenshujian/Desktop/qt/index/dlnode.cpp -o CMakeFiles/index.dir/dlnode.cpp.s
+
 CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.o: CMakeFiles/index.dir/flags.make
 CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.o: index_autogen/EWIEGA46WW/qrc_index_img.cpp
 CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.o -MF CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.o.d -o CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.o -c /Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/index_autogen/EWIEGA46WW/qrc_index_img.cpp
 
 CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.i: cmake_force
@@ -225,6 +344,20 @@ CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.i: cmake_force
 CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/index_autogen/EWIEGA46WW/qrc_index_img.cpp -o CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.s
+
+CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.o: CMakeFiles/index.dir/flags.make
+CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.o: index_autogen/EWIEGA46WW/qrc_list.cpp
+CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.o: CMakeFiles/index.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.o -MF CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.o.d -o CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.o -c /Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/index_autogen/EWIEGA46WW/qrc_list.cpp
+
+CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/index_autogen/EWIEGA46WW/qrc_list.cpp > CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.i
+
+CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/index_autogen/EWIEGA46WW/qrc_list.cpp -o CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.s
 
 # Object files for target index
 index_OBJECTS = \
@@ -237,7 +370,16 @@ index_OBJECTS = \
 "CMakeFiles/index.dir/slidepage.cpp.o" \
 "CMakeFiles/index.dir/mydialog.cpp.o" \
 "CMakeFiles/index.dir/graphview.cpp.o" \
-"CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.o"
+"CMakeFiles/index.dir/list_mainwindow.cpp.o" \
+"CMakeFiles/index.dir/listpage.cpp.o" \
+"CMakeFiles/index.dir/linklist.cpp.o" \
+"CMakeFiles/index.dir/lnode.cpp.o" \
+"CMakeFiles/index.dir/myarrowitem.cpp.o" \
+"CMakeFiles/index.dir/clinklist.cpp.o" \
+"CMakeFiles/index.dir/dlinklist.cpp.o" \
+"CMakeFiles/index.dir/dlnode.cpp.o" \
+"CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.o" \
+"CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.o"
 
 # External object files for target index
 index_EXTERNAL_OBJECTS =
@@ -251,13 +393,22 @@ index.app/Contents/MacOS/index: CMakeFiles/index.dir/sonwindow.cpp.o
 index.app/Contents/MacOS/index: CMakeFiles/index.dir/slidepage.cpp.o
 index.app/Contents/MacOS/index: CMakeFiles/index.dir/mydialog.cpp.o
 index.app/Contents/MacOS/index: CMakeFiles/index.dir/graphview.cpp.o
+index.app/Contents/MacOS/index: CMakeFiles/index.dir/list_mainwindow.cpp.o
+index.app/Contents/MacOS/index: CMakeFiles/index.dir/listpage.cpp.o
+index.app/Contents/MacOS/index: CMakeFiles/index.dir/linklist.cpp.o
+index.app/Contents/MacOS/index: CMakeFiles/index.dir/lnode.cpp.o
+index.app/Contents/MacOS/index: CMakeFiles/index.dir/myarrowitem.cpp.o
+index.app/Contents/MacOS/index: CMakeFiles/index.dir/clinklist.cpp.o
+index.app/Contents/MacOS/index: CMakeFiles/index.dir/dlinklist.cpp.o
+index.app/Contents/MacOS/index: CMakeFiles/index.dir/dlnode.cpp.o
 index.app/Contents/MacOS/index: CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_index_img.cpp.o
+index.app/Contents/MacOS/index: CMakeFiles/index.dir/index_autogen/EWIEGA46WW/qrc_list.cpp.o
 index.app/Contents/MacOS/index: CMakeFiles/index.dir/build.make
 index.app/Contents/MacOS/index: /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
 index.app/Contents/MacOS/index: /Users/chenshujian/Qt/6.5.3/macos/lib/QtGui.framework/Versions/A/QtGui
 index.app/Contents/MacOS/index: /Users/chenshujian/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/QtCore
 index.app/Contents/MacOS/index: CMakeFiles/index.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable index.app/Contents/MacOS/index"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable index.app/Contents/MacOS/index"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/index.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -269,6 +420,7 @@ CMakeFiles/index.dir/clean:
 .PHONY : CMakeFiles/index.dir/clean
 
 CMakeFiles/index.dir/depend: index_autogen/EWIEGA46WW/qrc_index_img.cpp
+CMakeFiles/index.dir/depend: index_autogen/EWIEGA46WW/qrc_list.cpp
 	cd /Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/chenshujian/Desktop/qt/index /Users/chenshujian/Desktop/qt/index /Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug /Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug /Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/index.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/index.dir/depend
 

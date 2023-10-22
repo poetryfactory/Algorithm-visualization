@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.24.2/CMakeSystem.cmake"
   "/Users/chenshujian/Desktop/qt/index/CMakeLists.txt"
   "/Users/chenshujian/Desktop/qt/index/index_img.qrc"
+  "/Users/chenshujian/Desktop/qt/index/list.qrc"
   "/Users/chenshujian/Qt/6.5.3/macos/lib/cmake/Qt6/FindWrapAtomic.cmake"
   "/Users/chenshujian/Qt/6.5.3/macos/lib/cmake/Qt6/FindWrapOpenGL.cmake"
   "/Users/chenshujian/Qt/6.5.3/macos/lib/cmake/Qt6/Qt6Config.cmake"
@@ -221,6 +222,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/index_autogen.dir/AutogenInfo.json"
   "CMakeFiles/index_autogen.dir/AutoRcc_index_img_EWIEGA46WW_Info.json"
+  "CMakeFiles/index_autogen.dir/AutoRcc_list_EWIEGA46WW_Info.json"
   ".qt/QtDeploySupport.cmake"
   "index.app/Contents/MacOS"
   "index.app/Contents/Info.plist"

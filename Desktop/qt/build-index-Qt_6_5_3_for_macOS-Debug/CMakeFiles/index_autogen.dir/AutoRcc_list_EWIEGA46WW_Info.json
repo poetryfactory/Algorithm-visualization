@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/index_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/chenshujian/Desktop/qt/index",
+	"CMAKE_SOURCE_DIR" : "/Users/chenshujian/Desktop/qt/index",
+	"INCLUDE_DIR" : "/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/index_autogen/include",
+	"INPUTS" : [ "/Users/chenshujian/Desktop/qt/index/img2/list.jpg" ],
+	"LOCK_FILE" : "/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/index_autogen.dir/AutoRcc_list_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "list" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_list.cpp",
+	"RCC_EXECUTABLE" : "/Users/chenshujian/Qt/6.5.3/macos/./libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/CMakeFiles/index_autogen.dir/AutoRcc_list_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/chenshujian/Desktop/qt/index/list.qrc",
+	"VERBOSITY" : 0
+}

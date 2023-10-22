@@ -12,4 +12,5 @@
         <file>img/rightArrow.png</file>
         <file>img/use.png</file>
     </qresource>
+    <qresource prefix="/img2"/>
 </RCC>

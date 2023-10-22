@@ -899,6 +899,118 @@ CMakeFiles/index.dir/index_mainwindow.cpp.o: \
   /Users/chenshujian/Qt/6.5.3/macos/lib/QtGui.framework/Headers/QMouseEvent \
   /Users/chenshujian/Desktop/qt/index/sonwindow.h \
   /Users/chenshujian/Desktop/qt/index/graphview.h \
+  /Users/chenshujian/Desktop/qt/index/list_mainwindow.h \
+  /Users/chenshujian/Desktop/qt/index/listpage.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtGui.framework/Headers/QIcon \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtGui.framework/Headers/QPalette \
+  /Users/chenshujian/Desktop/qt/index/linklist.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtCore.framework/Headers/QFile \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtCore.framework/Headers/qfile.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtCore.framework/Headers/qfiledevice.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/filesystem \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__errc \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cerrno \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iomanip \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/istream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/bitset \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ios \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__locale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/_locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/mutex \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__mutex_base \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/system_error \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/_xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_ctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/xlocale/__wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_stdio.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_stdlib.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_time.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/locale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstdarg \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/streambuf \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/nl_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_u_char.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_u_short.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_u_int.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_caddr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_blkcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_blksize_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_gid_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_in_addr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_in_port_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ino_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ino64_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_key_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_nlink_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_useconds_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_suseconds_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_def.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_setsize.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_set.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_clr.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_zero.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_isset.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_copy.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/_types/_nl_item.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/u8path.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/QTextBrowser \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/qtextbrowser.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/QGraphicsScene \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/QGraphicsView \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/qgraphicsview.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/QGraphicsItem \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/qgraphicsitem.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtGui.framework/Headers/qpainterpath.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtGui.framework/Headers/QIntValidator \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtGui.framework/Headers/qvalidator.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtCore.framework/Headers/qregularexpression.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtCore.framework/Headers/qlocale.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/QComboBox \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/qcombobox.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/qabstractitemdelegate.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/qstyleoption.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/qabstractspinbox.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/qslider.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/qabstractslider.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/qstyle.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/qtabbar.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/qrubberband.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/QAbstractSlider \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/QSlider \
+  /Users/chenshujian/Desktop/qt/index/uidefine.h \
+  /Users/chenshujian/Desktop/qt/index/lnode.h \
+  /Users/chenshujian/Qt/6.5.3/macos/lib/QtGui.framework/Headers/QBrush \
+  /Users/chenshujian/Desktop/qt/index/myarrowitem.h \
+  /Users/chenshujian/Desktop/qt/index/clinklist.h \
+  /Users/chenshujian/Desktop/qt/index/dlinklist.h \
+  /Users/chenshujian/Desktop/qt/index/dlnode.h \
   /Users/chenshujian/Desktop/qt/build-index-Qt_6_5_3_for_macOS-Debug/index_autogen/include/./ui_index_mainwindow.h \
   /Users/chenshujian/Qt/6.5.3/macos/lib/QtCore.framework/Headers/QVariant \
   /Users/chenshujian/Qt/6.5.3/macos/lib/QtGui.framework/Headers/QAction \
@@ -909,7 +1021,6 @@ CMakeFiles/index.dir/index_mainwindow.cpp.o: \
   /Users/chenshujian/Qt/6.5.3/macos/lib/QtCore.framework/Headers/qcoreapplication_platform.h \
   /Users/chenshujian/Qt/6.5.3/macos/lib/QtGui.framework/Headers/qguiapplication.h \
   /Users/chenshujian/Qt/6.5.3/macos/lib/QtGui.framework/Headers/qinputmethod.h \
-  /Users/chenshujian/Qt/6.5.3/macos/lib/QtCore.framework/Headers/qlocale.h \
   /Users/chenshujian/Qt/6.5.3/macos/lib/QtGui.framework/Headers/qguiapplication_platform.h \
   /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/QMenu \
   /Users/chenshujian/Qt/6.5.3/macos/lib/QtWidgets.framework/Headers/qmenu.h \

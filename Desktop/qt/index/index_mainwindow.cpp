@@ -71,18 +71,19 @@ index_mainWindow::index_mainWindow(QWidget *parent)
     h3->setFocusPolicy(Qt::NoFocus);
     h3->setStyleSheet("border: 2px groove gray; border-radius: 10px; padding-bottom:5px");
 
-    jumptoBtn2 = new mybutton(":/img/img/rightArrow.png");
+    jumptoBtn2 = new mybutton(":/img2/img2/list.jpg");
+    jumptoBtn2->setIconSize(QSize(400,400));
     jumptoBtn2->setParent(scrollWidget);
     jumptoBtn2->move(750,50);
     jumptoBtn2->setFixedSize(400,400);
     jumptoBtn2->setStyleSheet("border-style: solid; border-width: 2px; border-radius: 20px; border-color: rgb(169,169,169)");
     connect(jumptoBtn2, &mybutton::clicked, this, [=](){
         this->hide();
-        detailpage * d = new detailpage();
-        d->show();
-        connect(d->returnBtn,&mybutton::clicked,this,[=](){
+        list_mainwindow * l = new list_mainwindow();
+        l->show();
+        connect(l->returnBtn,&mybutton::clicked,this,[=](){
             this->show();
-            d->hide();
+            l->hide();
         });
     });
 
