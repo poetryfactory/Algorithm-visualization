@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/img3">
+        <file>img/tree.jpg</file>
+        <file>img/graph.jpg</file>
+    </qresource>
+</RCC>
