@@ -85,11 +85,11 @@ index_mainWindow::index_mainWindow(QWidget *parent)
       "border-color: rgb(169,169,169)");
   connect(jumptoBtn2, &mybutton::clicked, this, [=]() {
     this->hide();
-    detailpage *d = new detailpage("list");
-    d->show();
-    connect(d->returnBtn, &mybutton::clicked, this, [=]() {
+    list_mainwindow * l = new list_mainwindow();
+    l->show();
+    connect(l->returnBtn, &mybutton::clicked, this, [=]() {
       this->show();
-      d->hide();
+      l->hide();
     });
   });
 

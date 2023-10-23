@@ -14,6 +14,7 @@
 #include "mybutton.h"
 #include "detailpage.h"
 #include "sonwindow.h"
+#include "list_mainwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class index_mainWindow; }
